@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+    <title>Order Confirmation</title>
+</head>
+<body>
+    
+    {% if valid %}
+    <h1>Hello {{ name }},</h1>
+    <h4>Your order of:</h4>
+    <h4 class="order-written">{{ order }}</h4>
+    <h4>Has been placed. Expect it in 2-6 years.</h4>
+    {% else %}
+    <div class="error-msg">
+        <h1>NO ORDER DETECTED</h1>
+        <h4>To submit an order, go to <a href="/">the home page</a>.</h4>
+    </div>
+    {% endif %}
+</body>
+</html>

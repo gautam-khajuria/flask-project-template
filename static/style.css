@@ -1,0 +1,12 @@
+html {
+    font-family: Helvetica, Arial, Times;
+}
+
+.error-msg {
+    text-align: center;
+}
+
+.order-written {
+    border-left: .5rem solid blue;
+    padding: 5px 15px 5px 15px;
+}
